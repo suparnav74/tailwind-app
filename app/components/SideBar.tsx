@@ -16,7 +16,7 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="w-full sm:w-64 bg-gray-50 p-6 sm:p-10">
+    <div className="w-full sm:w-64 bg-gray-50 p-6 sm:p-10 rounded-xl border border-gray-50 shadow-lg lg:fixed sm:relative">
       {/* Profile Section */}
       <div className="flex flex-col items-center mb-8">
         <img
@@ -30,75 +30,117 @@ const Sidebar = () => {
 
       {/* Navigation Buttons */}
       <div className="space-y-4 text-black">
+        {/* Friends Button */}
         <button
-          className={`w-full py-2 text-left bg-gray-200 rounded hover:bg-gray-300 ${
-            activeButton === "Friends" ? "bg-blue-200" : ""
+          className={`w-full py-3 text-left bg-gray-200 rounded-lg hover:bg-blue-200 transition-all duration-300 ease-in-out shadow-md ${
+            activeButton === "Friends" ? "bg-blue-500 text-gray-600" : "text-black"
           }`}
           onClick={() => handleButtonClick("Friends")}
         >
-          Friends
+          <div className="flex items-center space-x-2 ms-2">
+            <i className="fas fa-users"></i>{" "}
+            <span>Friends</span>
+          </div>
         </button>
+
+        {/* Feeds Button */}
         <button
-          className={`w-full py-2 text-left bg-gray-200 rounded hover:bg-gray-300 ${
-            activeButton === "Feeds" ? "bg-blue-200" : ""
+          className={`w-full py-3 text-left bg-gray-200 rounded-lg hover:bg-blue-200 transition-all duration-300 ease-in-out shadow-md ${
+            activeButton === "Feeds" ? "bg-blue-500 text-gray-600" : "text-black"
           }`}
           onClick={() => handleButtonClick("Feeds")}
         >
-          Feeds
+          <div className="flex items-center space-x-2 ms-2">
+            <i className="fas fa-rss"></i>
+            <span>Feeds</span>
+          </div>
         </button>
+
+        {/* Groups Button */}
         <button
-          className={`w-full py-2 text-left bg-gray-200 rounded hover:bg-gray-300 ${
-            activeButton === "Groups" ? "bg-blue-200" : ""
+          className={`w-full py-3 text-left bg-gray-200 rounded-lg hover:bg-blue-200 transition-all duration-300 ease-in-out shadow-md ${
+            activeButton === "Groups" ? "bg-blue-500 text-gray-600" : "text-black"
           }`}
           onClick={() => handleButtonClick("Groups")}
         >
-          Groups
+          <div className="flex items-center space-x-2 ms-2">
+            <i className="fas fa-users-cog"></i>
+            <span>Groups</span>
+          </div>
         </button>
+
+        {/* Marketplace Button */}
         <button
-          className={`w-full py-2 text-left bg-gray-200 rounded hover:bg-gray-300 ${
-            activeButton === "Marketplace" ? "bg-blue-200" : ""
+          className={`w-full py-3 text-left bg-gray-200 rounded-lg hover:bg-blue-200 transition-all duration-300 ease-in-out shadow-md ${
+            activeButton === "Marketplace"
+              ? "bg-blue-500 text-gray-600"
+              : "text-black"
           }`}
           onClick={() => handleButtonClick("Marketplace")}
         >
-          Marketplace
+          <div className="flex items-center space-x-2 ms-2">
+            <i className="fas fa-store"></i> {/* Icon for Marketplace */}
+            <span>Marketplace</span>
+          </div>
         </button>
+
+        {/* Events Button */}
         <button
-          className={`w-full py-2 text-left bg-gray-200 rounded hover:bg-gray-300 ${
-            activeButton === "Events" ? "bg-blue-200" : ""
+          className={`w-full py-3 text-left bg-gray-200 rounded-lg hover:bg-blue-200 transition-all duration-300 ease-in-out shadow-md ${
+            activeButton === "Events" ? "bg-blue-500 text-gray-600" : "text-black"
           }`}
           onClick={() => handleButtonClick("Events")}
         >
-          Events
+          <div className="flex items-center space-x-2 ms-2">
+            <i className="fas fa-calendar-alt"></i>
+            <span>Events</span>
+          </div>
         </button>
 
         {/* See More Button */}
         <button
-          className={`w-full py-2 text-left bg-gray-200 rounded hover:bg-gray-300 ${
-            activeButton === "See More" ? "bg-blue-200" : ""
+          className={`w-full py-3 text-left bg-gray-200 rounded-lg hover:bg-blue-200 transition-all duration-300 ease-in-out shadow-md ${
+            activeButton === "See More"
+              ? "bg-blue-500 text-gray-600"
+              : "text-black"
           }`}
           onClick={toggleSeeMore}
         >
-          {isSeeMoreOpen ? "See Less" : "See More"}
+          <div className="flex items-center space-x-2 ms-2">
+            <i className="fas fa-plus-circle"></i>
+            <span>{isSeeMoreOpen ? "See Less" : "See More"}</span>
+          </div>
         </button>
 
         {/* Expanded Sections for 'See More' */}
         {isSeeMoreOpen && (
           <div className="space-y-4 mt-4">
             <button
-              className={`w-full py-2 text-left bg-gray-200 rounded hover:bg-gray-300 ${
-                activeButton === "Option 1" ? "bg-blue-200" : ""
+              className={`w-full py-3 text-left bg-gray-200 rounded-lg hover:bg-blue-200 transition-all duration-300 ease-in-out shadow-md ${
+                activeButton === "Option 1"
+                  ? "bg-blue-500 text-gray-600"
+                  : "text-black"
               }`}
               onClick={() => handleButtonClick("Option 1")}
             >
-              Option 1
+              <div className="flex items-center space-x-2 ms-2">
+                <i className="fas fa-cogs"></i>
+                <span>Option 1</span>
+              </div>
             </button>
+
             <button
-              className={`w-full py-2 text-left bg-gray-200 rounded hover:bg-gray-300 ${
-                activeButton === "Option 2" ? "bg-blue-200" : ""
+              className={`w-full py-3 text-left bg-gray-200 rounded-lg hover:bg-blue-200 transition-all duration-300 ease-in-out shadow-md ${
+                activeButton === "Option 2"
+                  ? "bg-blue-500 text-gray-600"
+                  : "text-black"
               }`}
               onClick={() => handleButtonClick("Option 2")}
             >
-              Option 2
+              <div className="flex items-center space-x-2 ms-2">
+                <i className="fas fa-cogs"></i>
+                <span>Option 2</span>
+              </div>
             </button>
           </div>
         )}

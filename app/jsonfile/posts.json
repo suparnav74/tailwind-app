@@ -1,0 +1,35 @@
+[
+    {
+      "id": 1,
+      "name": "John Doe",
+      "image": "https://randomuser.me/api/portraits/men/32.jpg",
+      "alt": "John Doe",
+      "time": "Just now",
+      "content": "This is my first post! I've been feeling really motivated lately and wanted to share my thoughts. Excited for what’s ahead!"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "image": "https://randomuser.me/api/portraits/women/2.jpg",
+      "alt": "Jane Smith",
+      "time": "5 minutes ago",
+      "content": "Just finished reading a great book. It really made me reflect on life and how we should appreciate the little things. Highly recommend it!"
+    },
+    {
+      "id": 3,
+      "name": "Emily Davis",
+      "image": "https://randomuser.me/api/portraits/women/3.jpg",
+      "alt": "Emily Davis",
+      "time": "10 minutes ago",
+      "content": "Had a productive morning at work! It’s always such a great feeling when you check everything off your to-do list. Can’t wait to see what the rest of the day brings."
+    },
+    {
+      "id": 4,
+      "name": "Michael Brown",
+      "image": "https://randomuser.me/api/portraits/men/4.jpg",
+      "alt": "Michael Brown",
+      "time": "30 minutes ago",
+      "content": "Just wanted to share how grateful I am for my friends and family. They really make life worth living. Feeling blessed today!"
+    }
+  ]
+  

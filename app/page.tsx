@@ -9,13 +9,13 @@ export default function Home() {
     <div className="w-full">
       <Navbar />
       <div className="flex flex-col lg:flex-row pt-20">
-        <div className="w-full lg:w-1/5 p-4">
+        <div className="w-full lg:w-1/5 p-4 lg:relative">
           <Sidebar />
         </div>
         <main className="w-full lg:w-3/5 p-4 lg:p-10 space-y-8">
           <MidContent />
         </main>
-        <div className="w-full lg:w-1/5 p-4">
+        <div className="w-full lg:w-1/5 p-4 lg:relative">
           <RightSideBar />
         </div>
       </div>

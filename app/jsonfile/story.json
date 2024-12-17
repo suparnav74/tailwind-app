@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "src": "https://randomuser.me/api/portraits/men/32.jpg",
+      "alt": "Story 1"
+    },
+    {
+      "id": 2,
+      "src": "https://randomuser.me/api/portraits/men/1.jpg",
+      "alt": "Story 2"
+    },
+    {
+      "id": 3,
+      "src": "https://randomuser.me/api/portraits/women/2.jpg",
+      "alt": "Story 3"
+    },
+    {
+      "id": 4,
+      "src": "https://randomuser.me/api/portraits/men/3.jpg",
+      "alt": "Story 4"
+    }
+]
+  
+  
